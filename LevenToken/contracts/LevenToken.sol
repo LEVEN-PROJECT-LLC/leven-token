@@ -215,7 +215,7 @@ contract LevenToken is Initializable, ERC20Upgradeable, OwnableUpgradeable {
         );
 
         require(
-            (_totalPreSalePool > (_soldPreSaleAmount + calculatedLevenToken)),
+            (_totalPreSalePool >= (_soldPreSaleAmount + calculatedLevenToken)),
             "Pre-sale pool limit exceeded"
         );
         payable(address(this)).transfer(msg.value);
@@ -234,7 +234,7 @@ contract LevenToken is Initializable, ERC20Upgradeable, OwnableUpgradeable {
         onlyOwner
     {
         require(
-            _totalTeamPool > (_distributedTeamPoolAmount + amount),
+            _totalTeamPool >= (_distributedTeamPoolAmount + amount),
             "Team pool limit exceeded"
         );
         require(
