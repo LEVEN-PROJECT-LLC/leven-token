@@ -206,6 +206,163 @@
           }
         }
       }
+    },
+    "b378c9c68f9afcb11d1e327e5ba43a5ea58d044c409d89b2430d050cbfe76fa0": {
+      "address": "0x6CE570017A58F51e9BE4e5FD19aB3e34b154D75E",
+      "txHash": "0x14f915a56eb60237eb4921af8b0d96c08f2c2408d6cf88e90b5ac6f01b48eddd",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "LevenTokenV2",
+            "label": "_maxSupply",
+            "type": "t_uint256",
+            "src": "contracts\\LevenTokenV2.sol:17"
+          },
+          {
+            "contract": "LevenTokenV2",
+            "label": "_maxPreSaleBuyLimit",
+            "type": "t_uint256",
+            "src": "contracts\\LevenTokenV2.sol:18"
+          },
+          {
+            "contract": "LevenTokenV2",
+            "label": "_price",
+            "type": "t_uint256",
+            "src": "contracts\\LevenTokenV2.sol:19"
+          },
+          {
+            "contract": "LevenTokenV2",
+            "label": "_totalPreSalePool",
+            "type": "t_uint256",
+            "src": "contracts\\LevenTokenV2.sol:20"
+          },
+          {
+            "contract": "LevenTokenV2",
+            "label": "_soldPreSaleAmount",
+            "type": "t_uint256",
+            "src": "contracts\\LevenTokenV2.sol:21"
+          },
+          {
+            "contract": "LevenTokenV2",
+            "label": "_totalTeamPool",
+            "type": "t_uint256",
+            "src": "contracts\\LevenTokenV2.sol:22"
+          },
+          {
+            "contract": "LevenTokenV2",
+            "label": "_distributedTeamPoolAmount",
+            "type": "t_uint256",
+            "src": "contracts\\LevenTokenV2.sol:23"
+          },
+          {
+            "contract": "LevenTokenV2",
+            "label": "_totalAirDropPool",
+            "type": "t_uint256",
+            "src": "contracts\\LevenTokenV2.sol:24"
+          },
+          {
+            "contract": "LevenTokenV2",
+            "label": "_utilizedAirDropAmount",
+            "type": "t_uint256",
+            "src": "contracts\\LevenTokenV2.sol:25"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
     }
   }
 }

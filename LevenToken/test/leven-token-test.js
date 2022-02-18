@@ -88,9 +88,9 @@ describe("LevenToken", function () {
 
   describe('Upgradeability', function () {
     it('Should be able to be upgraded', async function () {
-      const LevenTokenV2 = await ethers.getContractFactory("LevenTokenV2");
+      const LevenTokenV2 = await ethers.getContractFactory("LevenTokenV3");
       const levenTokenV2 = await upgrades.upgradeProxy(levenToken.address, LevenTokenV2);
-      await levenTokenV2.initializeV2();
+      await levenTokenV2.initializeV3();
 
       expect(await levenTokenV2.banana()).to.be.equal(10);
     });
