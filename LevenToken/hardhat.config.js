@@ -41,11 +41,13 @@ module.exports = {
       url: process.env.RINKEBY_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+        gasMultiplier: 2
     },
     goerli: {
       url: process.env.GOERLI_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+        gasMultiplier: 1.5
     },
     "bsc-testnet": {
       url: process.env.BSC_TESTNET_URL || "",

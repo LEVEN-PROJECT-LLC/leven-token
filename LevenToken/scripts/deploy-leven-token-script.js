@@ -8,7 +8,6 @@ async function main() {
   const LevenToken = await ethers.getContractFactory("LevenToken");
   const levenToken = await upgrades.deployProxy(LevenToken, { initializer: 'initialize' });
   await levenToken.deployed();
-  
   console.log("LevenToken Proxy deployed to:", levenToken.address);
 }
 

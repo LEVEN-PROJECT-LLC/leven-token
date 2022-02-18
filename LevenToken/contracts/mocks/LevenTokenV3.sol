@@ -7,7 +7,7 @@ import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol";
 
-contract LevenTokenV2 is Initializable, ERC20Upgradeable, OwnableUpgradeable {
+contract LevenTokenV3 is Initializable, ERC20Upgradeable, OwnableUpgradeable {
     /// @custom:oz-upgrades-unsafe-allow constructor
 
     constructor() initializer {}
@@ -39,7 +39,7 @@ contract LevenTokenV2 is Initializable, ERC20Upgradeable, OwnableUpgradeable {
         __Ownable_init();
     }
 
-    function initializeV2() external onlyOwner {
+    function initializeV3() external onlyOwner {
         _banana = 10;
     }
 
